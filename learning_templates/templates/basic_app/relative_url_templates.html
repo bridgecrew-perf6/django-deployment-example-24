@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to Relative URL Templates</h1>
+
+    <a href="{% url 'basic_app:other' %}">The Other Page</a>    <!-- Note the 'basic_app' refers to the app_name in the urls.py file in the basic_app folder, not the folder itself -->
+    <a href="{% url 'admin:index' %}">Admin Page</a>            <!-- This links to the Admin Login Page -->
+    <a href="{% url 'index' %}">Index Page</a>                  <!-- This links to the Index Page -->
+
+  </body>
+</html>
